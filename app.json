@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "aplimusica",
-    "slug": "aplimusica",
+    "name": "TrapCanarias",
+    "slug": "TrapCanarias",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/palmlogo.png",
@@ -26,7 +26,7 @@
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/palmlogo.png"
     }
   }
 }
