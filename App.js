@@ -6,11 +6,14 @@ import Trap from "./Tabs/Trap"
 import Lanueva from "./Tabs/Lanueva"
 import Reggaeton from "./Tabs/Reggaeton"
 import Top5 from "./Tabs/Top5"
+import Header from './Header'
 
 const Tab = createMaterialBottomTabNavigator();
 
 export default function App() {
   return (
+    <>
+    <Header />
     <NavigationContainer>
     <Tab.Navigator
     initialRouteName="Trap"
@@ -60,5 +63,6 @@ export default function App() {
     />
   </Tab.Navigator>
   </NavigationContainer>
+  </>
   );
 }
