@@ -1,14 +1,14 @@
 {
   "expo": {
-    "name": "aplimusica",
-    "slug": "aplimusica",
+    "name": "TrapCanarias",
+    "slug": "TrapCanarias",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/palmlogo.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/splash2.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#282c34"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -26,7 +26,7 @@
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/palmlogo.png"
     }
   }
 }
