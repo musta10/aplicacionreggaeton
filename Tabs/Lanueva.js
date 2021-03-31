@@ -16,7 +16,7 @@ class Profile extends React.Component {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#fff',
+      backgroundColor: '#FFD321',
       alignItems: 'center',
       justifyContent: 'center',
     },
