@@ -11,7 +11,7 @@ class Top5 extends React.Component {
   <View style={styles.container}>
     <View style={styles.tiutloTop}>
       <Text style={styles.textoTop}>El top 5 en Islas Canarias</Text>
-      <MaterialCommunityIcons name="music" size={38} />
+      <MaterialCommunityIcons name="music" color={'#FFD321'} size={38} />
       <StatusBar style="auto" />
       </View>
     </View>
@@ -32,8 +32,8 @@ const styles = StyleSheet.create({
       justifyContent: 'space-around',
     },
     textoTop: {
-      fontSize: 20,
-      color: "#FFD321"
+      fontSize: 18,
+      color: "#000"
     }
   });
   
