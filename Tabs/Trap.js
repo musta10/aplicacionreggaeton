@@ -28,14 +28,20 @@ const mykeTowers = "https://youtube.com/c/MykeTowers";
 
 const Trap = () => {
   return(
+    <>
     <View style={styles.container}>
-        <Text>Pagina artistas Trap</Text>
+      <View style={styles.textos}>
+      <Text style={styles.titulo}>Quien es el Rey del Trap ?</Text>
+      <Text style={styles.subtitulo}>21 artistas cantan Trap</Text>
+      </View>
         <StatusBar style="auto" />
-        <OpenURLButton url={mykeTowers}>
-         Myke Towers
-         </OpenURLButton>
+        <View>
+          <OpenURLButton url={mykeTowers}>
+        Myke Towers
+        </OpenURLButton></View>
       </View>
        
+       </>
           )
 }
 
@@ -44,9 +50,19 @@ const styles = StyleSheet.create({
     container: {
       flex: 1,
       backgroundColor: '#fff',
-      alignItems: 'center',
-      justifyContent: 'center',
     },
+    textos:{
+      margin: 20,
+      textAlign: 'center',
+    },
+    titulo: {
+      fontSize: 20,
+      fontWeight: "bold"
+    },
+    subtitulo: {
+      color: "#796e6e"
+    },
+
   });
   
 

@@ -31,8 +31,8 @@ const styles = StyleSheet.create({
       justifyContent: 'space-around',
     },
     textoTop: {
-      fontSize: 18,
-      color: "#000"
+      fontSize: 20,
+     fontWeight: 'bold'
     }
   });
   
