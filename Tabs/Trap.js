@@ -3,7 +3,6 @@ import { StatusBar } from 'expo-status-bar';
 import { Alert, Button, Linking, StyleSheet, Text, View } from 'react-native';
 
 
-const mykeTowers = "https://youtube.com/c/MykeTowers";
 
 
 const OpenURLButton = ({ url, children }) => {
@@ -23,6 +22,8 @@ const OpenURLButton = ({ url, children }) => {
   return <Button title={children} onPress={handlePress} />;
 };
 
+
+const mykeTowers = "https://youtube.com/c/MykeTowers";
 
 
 const Trap = () => {
