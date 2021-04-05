@@ -7,7 +7,7 @@ const Header = () => {
     <View style={styles.header}>
       <Image source={logo} style={styles.palmera} />
       <View>
-        <Text style={styles.headerText}>TrapCanarias</Text>
+        <Text style={styles.headerText}>TrapMaison</Text>
       </View>
       <View>
         <Text style={styles.headerTitle}>Musica Trap y Drill</Text>
