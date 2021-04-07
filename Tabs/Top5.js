@@ -2,7 +2,6 @@ import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import { WebView } from 'react-native-webview';
 
 
 class Top5 extends React.Component {
@@ -10,8 +9,8 @@ class Top5 extends React.Component {
         return(
   <View style={styles.container}>
     <View style={styles.tiutloTop}>
-      <Text style={styles.textoTop}>El top 5 en Islas Canarias</Text>
-      <MaterialCommunityIcons name="music" color={'#FFD321'} size={38} />
+      <Text style={styles.textoTop}>El Top 5 en Islas Canarias</Text>
+      <MaterialCommunityIcons name="music" color={'#FFFFFF'} size={38} />
       <StatusBar style="auto" />
       </View>
     </View>
@@ -22,7 +21,7 @@ class Top5 extends React.Component {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#FFFFFF',
+      backgroundColor: '#FFD321',
     },
     tiutloTop: {
       height: 60,
@@ -32,8 +31,8 @@ const styles = StyleSheet.create({
       justifyContent: 'space-around',
     },
     textoTop: {
-      fontSize: 18,
-      color: "#000"
+      fontSize: 20,
+     fontWeight: 'bold'
     }
   });
   

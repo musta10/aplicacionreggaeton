@@ -6,7 +6,7 @@ class Profile extends React.Component {
     render(){
         return(
   <View style={styles.container}>
-      <Text>Screen artistas La nueva generación</Text>
+      <Text style={styles.subtitulo}>20 artistas la nueva generación</Text>
       <StatusBar style="auto" />
     </View>
         )
@@ -16,10 +16,12 @@ class Profile extends React.Component {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#FFD321',
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
+      backgroundColor: '#FFFFFF',
+    }, subtitulo :{
+      textAlign: 'center',
+      margin: 20
+      
+    }
   });
   
 
