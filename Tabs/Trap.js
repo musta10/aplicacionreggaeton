@@ -53,14 +53,16 @@ const styles = StyleSheet.create({
     },
     textos:{
       margin: 20,
-      textAlign: 'center',
+      
     },
     titulo: {
       fontSize: 20,
-      fontWeight: "bold"
+      fontWeight: "bold",
+      textAlign: 'center',
     },
     subtitulo: {
-      color: "#796e6e"
+      color: "#796e6e",
+      textAlign: 'center',
     },
 
   });
