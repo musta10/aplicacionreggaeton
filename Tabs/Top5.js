@@ -4,18 +4,17 @@ import { StyleSheet, Text, View } from 'react-native';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 
-class Top5 extends React.Component {
-    render(){
-        return(
-  <View style={styles.container}>
-    <View style={styles.tiutloTop}>
-      <Text style={styles.textoTop}>El Top 5 en Islas Canarias</Text>
-      <MaterialCommunityIcons name="music" color={'#FFFFFF'} size={38} />
-      <StatusBar style="auto" />
+
+const Top5 = () => {
+  return(
+    <View style={styles.container}>
+      <View style={styles.tiutloTop}>
+        <Text style={styles.textoTop}>El Top 5 en Islas Canarias</Text>
+        <MaterialCommunityIcons name="music" color={'#FFFFFF'} size={38} />
+        <StatusBar style="auto" />
+        </View>
       </View>
-    </View>
-        )
-    }
+          )
 }
 
 const styles = StyleSheet.create({

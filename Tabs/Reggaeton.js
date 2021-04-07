@@ -20,7 +20,8 @@ const styles = StyleSheet.create({
     },
     subtitulo: {
       margin: 20,
-      textAlign: 'center'
+      textAlign: 'center',
+      color: "#796e6e",
     }
   });
   
