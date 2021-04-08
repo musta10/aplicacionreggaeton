@@ -26,10 +26,6 @@ const Top5 = () => {
     }
   }, []);
 
-  const togglePlaying = useCallback(() => {
-    setPlaying((prev) => !prev);
-  }, []);
-
   return(
     <View style={styles.container}>
       <View style={styles.tiutloTop}>
