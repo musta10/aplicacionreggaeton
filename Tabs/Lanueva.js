@@ -1,6 +1,7 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import Lanueva from "../ListaComponentes/ListaNueva"
 
 class Profile extends React.Component {
     render(){
@@ -8,6 +9,7 @@ class Profile extends React.Component {
   <View style={styles.container}>
       <Text style={styles.subtitulo}>20 artistas la nueva generación</Text>
       <StatusBar style="auto" />
+      <Lanueva />
     </View>
         )
     }

@@ -1,11 +1,13 @@
 import React, {useState} from "react";
 import { SafeAreaView, View, StyleSheet, Text, Linking,TouchableOpacity } from "react-native";
+import { ScrollView } from "react-native-gesture-handler";
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 
 const Reggeaton = () => {
   return (
     <SafeAreaView style={{ flex: 1 }}>
+      <ScrollView>
       <View style={styles.container}>
         <TouchableOpacity  style={styles.artistalist} onPress={() =>{
          Linking.openURL("https://youtube.com/c/DaddyYankee");
@@ -43,7 +45,20 @@ const Reggeaton = () => {
          <MaterialCommunityIcons name="crown" color={"black"} size={30} />
          <Text style={styles.hyperlinkStyle}>bad bunny</Text>
         </TouchableOpacity>
+        <TouchableOpacity  style={styles.artistalist} onPress={() =>{
+         Linking.openURL("https://www.youtube.com/c/BadBunnyPR");
+        }}>
+         <MaterialCommunityIcons name="crown" color={"black"} size={30} />
+         <Text style={styles.hyperlinkStyle}>bad bunny</Text>
+        </TouchableOpacity>
+        <TouchableOpacity  style={styles.artistalist} onPress={() =>{
+         Linking.openURL("https://www.youtube.com/c/BadBunnyPR");
+        }}>
+         <MaterialCommunityIcons name="crown" color={"black"} size={30} />
+         <Text style={styles.hyperlinkStyle}>bad bunny</Text>
+        </TouchableOpacity>
       </View>
+      </ScrollView>
     </SafeAreaView>
   );
 };
