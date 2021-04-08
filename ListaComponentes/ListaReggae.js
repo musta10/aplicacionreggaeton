@@ -10,7 +10,7 @@ const Reggeaton = () => {
         <TouchableOpacity  style={styles.artistalist} onPress={() =>{
          Linking.openURL("https://youtube.com/c/DaddyYankee");
         }}>
-         <MaterialCommunityIcons name="crown" color={"black"} size={30} />
+         <MaterialCommunityIcons name="music-note-eighth" color={"black"} size={30} />
          <Text style={styles.hyperlinkStyle}>daddy yankee</Text>
         </TouchableOpacity>
         <TouchableOpacity  style={styles.artistalist} onPress={() =>{
