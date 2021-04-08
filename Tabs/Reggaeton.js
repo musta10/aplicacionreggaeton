@@ -8,7 +8,9 @@ class Notifications extends React.Component {
   <View style={styles.container}>
       <Text style={styles.subtitulo}>33 artistas cantan Reggaeton</Text>
       <StatusBar style="auto" />
+      
     </View>
+    
         )
     }
 }

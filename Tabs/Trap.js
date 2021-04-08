@@ -1,7 +1,7 @@
 import React, {useCallback } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { Alert, Button, Linking, StyleSheet, Text, View } from 'react-native';
-
+import ListaArtistas from "../ListaComponentes/ListaTrap"
 
 
 
@@ -22,7 +22,6 @@ const OpenURLButton = ({ url, children }) => {
   return <Button title={children} onPress={handlePress} />;
 };
 
-
 const mykeTowers = "https://youtube.com/c/MykeTowers";
 
 
@@ -35,10 +34,11 @@ const Trap = () => {
       <Text style={styles.subtitulo}>21 artistas cantan Trap</Text>
       </View>
         <StatusBar style="auto" />
-        <View>
+        {/* <View>
           <OpenURLButton url={mykeTowers}>
         Myke Towers
-        </OpenURLButton></View>
+        </OpenURLButton></View> */}
+        <ListaArtistas />
       </View>
        
        </>
