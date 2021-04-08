@@ -15,6 +15,18 @@ const ListaTrap = () => {
          <MaterialCommunityIcons name="crown" color={"black"} size={30} />
          <Text style={styles.hyperlinkStyle}> Myke Towers</Text>
         </TouchableOpacity>
+        <TouchableOpacity  style={styles.artistalist} onPress={() =>{
+         Linking.openURL("https://youtube.com/c/AnuelAA");
+        }}>
+         <MaterialCommunityIcons name="crown" color={"black"} size={30} />
+         <Text style={styles.hyperlinkStyle}>Anuel aa</Text>
+        </TouchableOpacity>
+        <TouchableOpacity  style={styles.artistalist} onPress={() =>{
+         Linking.openURL("https://www.youtube.com/c/BadBunnyPR");
+        }}>
+         <MaterialCommunityIcons name="crown" color={"black"} size={30} />
+         <Text style={styles.hyperlinkStyle}>bad bunny</Text>
+        </TouchableOpacity>
       </View>
     </SafeAreaView>
   );
@@ -25,13 +37,17 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "white",
-    paddingHorizontal: 20
+    // paddingHorizontal: 20
   },
   artistalist:{
-    borderWidth: 2,
-    borderColor: "#FFD321",
+    // borderWidth: 2,
+    // borderColor: "#FFD321",
+    borderBottomWidth: 0.5,
+    borderBottomColor: "#ccc",
     alignItems: "center",
-    height: 65,
+    height: 60,
+    margin: 5,
+    flexDirection: "row",
     justifyContent: "center",
     borderRadius: 35
   },
@@ -40,6 +56,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     textTransform: "uppercase",
     letterSpacing: 2,
+    paddingLeft: 5
   },
 });
 
