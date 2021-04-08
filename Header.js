@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Text, View, Image } from "react-native";
+import { StyleSheet, Text, View, Image, Platform, StatusBar } from "react-native";
 import logo from "./assets/palmlogo.png";
 
 const Header = () => {
@@ -18,8 +18,9 @@ const Header = () => {
 
 const styles = StyleSheet.create({
   header: {
-    marginTop: 50,
-    height: 60,
+    // marginTop: 50,
+    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
+    height: 90,
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-around",
