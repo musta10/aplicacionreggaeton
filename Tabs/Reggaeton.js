@@ -1,6 +1,7 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import ListaArtistas from "../ListaComponentes/ListaReggae";
 
 class Notifications extends React.Component {
     render(){
@@ -8,7 +9,7 @@ class Notifications extends React.Component {
   <View style={styles.container}>
       <Text style={styles.subtitulo}>33 artistas cantan Reggaeton</Text>
       <StatusBar style="auto" />
-      
+      <ListaArtistas />
     </View>
     
         )
