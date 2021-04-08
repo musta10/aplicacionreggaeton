@@ -8,7 +8,9 @@ class Notifications extends React.Component {
   <View style={styles.container}>
       <Text style={styles.subtitulo}>33 artistas cantan Reggaeton</Text>
       <StatusBar style="auto" />
+      
     </View>
+    
         )
     }
 }
@@ -20,7 +22,8 @@ const styles = StyleSheet.create({
     },
     subtitulo: {
       margin: 20,
-      textAlign: 'center'
+      textAlign: 'center',
+      color: "#796e6e",
     }
   });
   
