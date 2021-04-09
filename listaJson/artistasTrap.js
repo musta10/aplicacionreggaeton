@@ -1,4 +1,4 @@
-[
+export const dataTrap = [
     { "name": "Myke Towers", "url": "https://youtube.com/c/MykeTowers" },
     {
       "name": "AnuelAA",
