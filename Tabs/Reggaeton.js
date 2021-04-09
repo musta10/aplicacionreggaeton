@@ -7,7 +7,7 @@ class Notifications extends React.Component {
     render(){
         return(
   <View style={styles.container}>
-      <Text style={styles.subtitulo}>33 artistas cantan Reggaeton</Text>
+      <Text style={styles.subtitulo}>34 artistas cantan Reggaeton</Text>
       <StatusBar style="auto" />
       <ListaArtistas />
     </View>
