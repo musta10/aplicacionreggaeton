@@ -7,7 +7,7 @@ class Profile extends React.Component {
     render(){
         return(
   <View style={styles.container}>
-      <Text style={styles.subtitulo}>24 artistas la nueva generación</Text>
+      <Text style={styles.subtitulo}>25 artistas la nueva generación</Text>
       <StatusBar style="auto" />
       <Lanueva />
     </View>

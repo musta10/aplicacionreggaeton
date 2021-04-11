@@ -18,9 +18,9 @@ const Header = () => {
 
 const styles = StyleSheet.create({
   header: {
-    // marginTop: 50,
-    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
-    height: 90,
+    marginTop: 50,
+    // paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
+    // height: 90,
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-around",

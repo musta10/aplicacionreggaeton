@@ -1,68 +1,45 @@
-import React, {useState} from "react";
-import { SafeAreaView, View, StyleSheet, Text, Linking,TouchableOpacity } from "react-native";
+import React, { useState } from "react";
+import {
+  SafeAreaView,
+  View,
+  StyleSheet,
+  Text,
+  Linking,
+  TouchableOpacity,
+} from "react-native";
 import { ScrollView } from "react-native-gesture-handler";
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-
+import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
+import nuevajson from "../listaJson/artistasNueva.json";
 
 const Lanueva = () => {
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <ScrollView>
-      <View style={styles.container}>
-        <TouchableOpacity  style={styles.artistalist} onPress={() =>{
-         Linking.openURL("https://youtu.be/AEsLZAO1EDU");
-        }}>
-         <MaterialCommunityIcons name="account" color={"black"} size={30} />
-         <Text style={styles.hyperlinkStyle}>maikel de la calle</Text>
-        </TouchableOpacity>
-        <TouchableOpacity  style={styles.artistalist} onPress={() =>{
-         Linking.openURL("https://youtube.com/c/AnuelAA");
-        }}>
-         <MaterialCommunityIcons name="crown" color={"black"} size={30} />
-         <Text style={styles.hyperlinkStyle}>Anuel aa</Text>
-        </TouchableOpacity>
-        <TouchableOpacity  style={styles.artistalist} onPress={() =>{
-         Linking.openURL("https://www.youtube.com/c/BadBunnyPR");
-        }}>
-         <MaterialCommunityIcons name="crown" color={"black"} size={30} />
-         <Text style={styles.hyperlinkStyle}>bad bunny</Text>
-        </TouchableOpacity>
-        <TouchableOpacity  style={styles.artistalist} onPress={() =>{
-         Linking.openURL("https://www.youtube.com/c/BadBunnyPR");
-        }}>
-         <MaterialCommunityIcons name="crown" color={"black"} size={30} />
-         <Text style={styles.hyperlinkStyle}>bad bunny</Text>
-        </TouchableOpacity>
-        <TouchableOpacity  style={styles.artistalist} onPress={() =>{
-         Linking.openURL("https://www.youtube.com/c/BadBunnyPR");
-        }}>
-         <MaterialCommunityIcons name="crown" color={"black"} size={30} />
-         <Text style={styles.hyperlinkStyle}>bad bunny</Text>
-        </TouchableOpacity>
-        <TouchableOpacity  style={styles.artistalist} onPress={() =>{
-         Linking.openURL("https://www.youtube.com/c/BadBunnyPR");
-        }}>
-         <MaterialCommunityIcons name="crown" color={"black"} size={30} />
-         <Text style={styles.hyperlinkStyle}>bad bunny</Text>
-        </TouchableOpacity>
-        <TouchableOpacity  style={styles.artistalist} onPress={() =>{
-         Linking.openURL("https://www.youtube.com/c/BadBunnyPR");
-        }}>
-         <MaterialCommunityIcons name="crown" color={"black"} size={30} />
-         <Text style={styles.hyperlinkStyle}>bad bunny</Text>
-        </TouchableOpacity>
-        <TouchableOpacity  style={styles.artistalist} onPress={() =>{
-         Linking.openURL("https://www.youtube.com/c/BadBunnyPR");
-        }}>
-         <MaterialCommunityIcons name="crown" color={"black"} size={30} />
-         <Text style={styles.hyperlinkStyle}>bad bunny</Text>
-        </TouchableOpacity>
-      </View>
+        <View style={styles.container}>
+          {nuevajson.map((artista) => {
+            return (
+              <TouchableOpacity
+              key={artista.id}
+                style={styles.artistalist}
+                onPress={() => {
+                  Linking.openURL(artista.url);
+                }}
+              >
+                <MaterialCommunityIcons
+                  name="account"
+                  color={"black"}
+                  size={30}
+                />
+                <Text style={styles.hyperlinkStyle}>{artista.name}</Text>
+              </TouchableOpacity>
+            );
+          })}
+
+        </View>
       </ScrollView>
     </SafeAreaView>
   );
 };
-
 
 const styles = StyleSheet.create({
   container: {
@@ -70,7 +47,7 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
     // paddingHorizontal: 20
   },
-  artistalist:{
+  artistalist: {
     // borderWidth: 2,
     // borderColor: "#FFD321",
     borderBottomWidth: 0.5,
@@ -80,14 +57,14 @@ const styles = StyleSheet.create({
     margin: 5,
     flexDirection: "row",
     justifyContent: "center",
-    borderRadius: 35
+    borderRadius: 35,
   },
   hyperlinkStyle: {
     color: "black",
     fontSize: 16,
     textTransform: "uppercase",
     letterSpacing: 2,
-    paddingLeft: 5
+    paddingLeft: 5,
   },
 });
 
