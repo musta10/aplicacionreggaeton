@@ -10,7 +10,7 @@ const Trap = () => {
     <View style={styles.container}>
       <View style={styles.textos}>
       <Text style={styles.titulo}>Quien es el Rey del Trap ?</Text>
-      <Text style={styles.subtitulo}>21 artistas cantan Trap</Text>
+      <Text style={styles.subtitulo}>20 artistas cantan Trap</Text>
       </View>
         <StatusBar style="auto" />
         <ListaArtistas />
