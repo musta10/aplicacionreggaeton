@@ -16,6 +16,7 @@ const Header = () => {
   );
 }
 
+
 const styles = StyleSheet.create({
   header: {
     marginTop: 55,
