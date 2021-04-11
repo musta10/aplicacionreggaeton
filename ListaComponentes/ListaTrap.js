@@ -9,9 +9,9 @@ const ListaTrap = () => {
     <SafeAreaView style={{ flex: 1 }}>
       <ScrollView>
       <View style={styles.container}>
-        {trapjson.map((artista, i) => {
+        {trapjson.map((artista, key) => {
           return (
-            <TouchableOpacity key={i}  style={styles.artistalist} onPress={() =>{
+            <TouchableOpacity key={key}  style={styles.artistalist} onPress={() =>{
               Linking.openURL(artista.url);
              }}>
               <MaterialCommunityIcons name="crown" color={"black"} size={30} />

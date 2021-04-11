@@ -9,9 +9,9 @@ const Reggeaton = () => {
     <SafeAreaView style={{ flex: 1 }}>
       <ScrollView>
       <View style={styles.container}>
-        {reggaetonjson.map((artistas, i) => {
+        {reggaetonjson.map((artistas, key) => {
           return(
-            <TouchableOpacity key={i} style={styles.artistalist} onPress={() =>{
+            <TouchableOpacity key={key} style={styles.artistalist} onPress={() =>{
               Linking.openURL(artistas.url);
              }}>
               <MaterialCommunityIcons name="music-note-eighth" color={"black"} size={30} />
