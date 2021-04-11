@@ -11,11 +11,11 @@ const Top5 = () => {
   const [playing, setPlaying] = useState(false);
 
   const videos = [
-    {topMusic: "Fklvhaj7drg"},
     {topMusic: "37tmRDUK0FM"},
-    {topMusic: "hsGDEkhFfS0"},
-    {topMusic: "0Q5J38bpunI"},
-    {topMusic: "CMvW-1a8ytI"}
+    {topMusic: "Fklvhaj7drg"},
+    {topMusic: "z1bYLIJ1hbI"},
+    {topMusic: "GZCIchMq8Wo"},
+    {topMusic: "M-N8zr7_UWM"}
   
   ]
 
@@ -24,10 +24,6 @@ const Top5 = () => {
       setPlaying(false);
       Alert.alert("Video Terminado mira otro!");
     }
-  }, []);
-
-  const togglePlaying = useCallback(() => {
-    setPlaying((prev) => !prev);
   }, []);
 
   return(
