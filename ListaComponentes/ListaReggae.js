@@ -2,61 +2,24 @@ import React, {useState} from "react";
 import { SafeAreaView, View, StyleSheet, Text, Linking,TouchableOpacity } from "react-native";
 import { ScrollView } from "react-native-gesture-handler";
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-
+import reggaetonjson from "../listaJson/artistasReggaeton.json"
 
 const Reggeaton = () => {
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <ScrollView>
       <View style={styles.container}>
-        <TouchableOpacity  style={styles.artistalist} onPress={() =>{
-         Linking.openURL("https://youtube.com/c/DaddyYankee");
-        }}>
-         <MaterialCommunityIcons name="music-note-eighth" color={"black"} size={30} />
-         <Text style={styles.hyperlinkStyle}>daddy yankee</Text>
-        </TouchableOpacity>
-        <TouchableOpacity  style={styles.artistalist} onPress={() =>{
-         Linking.openURL("https://youtube.com/c/AnuelAA");
-        }}>
-         <MaterialCommunityIcons name="crown" color={"black"} size={30} />
-         <Text style={styles.hyperlinkStyle}>Anuel aa</Text>
-        </TouchableOpacity>
-        <TouchableOpacity  style={styles.artistalist} onPress={() =>{
-         Linking.openURL("https://www.youtube.com/c/BadBunnyPR");
-        }}>
-         <MaterialCommunityIcons name="crown" color={"black"} size={30} />
-         <Text style={styles.hyperlinkStyle}>bad bunny</Text>
-        </TouchableOpacity>
-        <TouchableOpacity  style={styles.artistalist} onPress={() =>{
-         Linking.openURL("https://www.youtube.com/c/BadBunnyPR");
-        }}>
-         <MaterialCommunityIcons name="crown" color={"black"} size={30} />
-         <Text style={styles.hyperlinkStyle}>bad bunny</Text>
-        </TouchableOpacity>
-        <TouchableOpacity  style={styles.artistalist} onPress={() =>{
-         Linking.openURL("https://www.youtube.com/c/BadBunnyPR");
-        }}>
-         <MaterialCommunityIcons name="crown" color={"black"} size={30} />
-         <Text style={styles.hyperlinkStyle}>bad bunny</Text>
-        </TouchableOpacity>
-        <TouchableOpacity  style={styles.artistalist} onPress={() =>{
-         Linking.openURL("https://www.youtube.com/c/BadBunnyPR");
-        }}>
-         <MaterialCommunityIcons name="crown" color={"black"} size={30} />
-         <Text style={styles.hyperlinkStyle}>bad bunny</Text>
-        </TouchableOpacity>
-        <TouchableOpacity  style={styles.artistalist} onPress={() =>{
-         Linking.openURL("https://www.youtube.com/c/BadBunnyPR");
-        }}>
-         <MaterialCommunityIcons name="crown" color={"black"} size={30} />
-         <Text style={styles.hyperlinkStyle}>bad bunny</Text>
-        </TouchableOpacity>
-        <TouchableOpacity  style={styles.artistalist} onPress={() =>{
-         Linking.openURL("https://www.youtube.com/c/BadBunnyPR");
-        }}>
-         <MaterialCommunityIcons name="crown" color={"black"} size={30} />
-         <Text style={styles.hyperlinkStyle}>bad bunny</Text>
-        </TouchableOpacity>
+        {reggaetonjson.map((artistas, i) => {
+          return(
+            <TouchableOpacity key={i} style={styles.artistalist} onPress={() =>{
+              Linking.openURL(artistas.url);
+             }}>
+              <MaterialCommunityIcons name="music-note-eighth" color={"black"} size={30} />
+              <Text style={styles.hyperlinkStyle}> {artistas.name} </Text>
+             </TouchableOpacity>
+          )
+        })}
+       
       </View>
       </ScrollView>
     </SafeAreaView>
