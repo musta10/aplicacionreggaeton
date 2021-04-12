@@ -2,6 +2,7 @@ import React, {useCallback } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { Alert, Button, Linking, StyleSheet, Text, View } from 'react-native';
 import ListaArtistas from "../ListaComponentes/ListaTrap"
+import Playlist from "../ListaComponentes/PlayList"
 
 
 
@@ -14,6 +15,7 @@ const Trap = () => {
       </View>
         <StatusBar style="auto" />
         <ListaArtistas />
+        <Playlist />
       </View>
           )
 }
