@@ -2,12 +2,13 @@ import React, {useCallback } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { Alert, Button, Linking, StyleSheet, Text, View } from 'react-native';
 import ListaArtistas from "../ListaComponentes/ListaTrap"
-import Playlist from "../ListaComponentes/PlayList"
+
 
 
 
 const Trap = () => {
   return(
+    <>
     <View style={styles.container}>
       <View style={styles.textos}>
       <Text style={styles.titulo}>Quien es el Rey del Trap ?</Text>
@@ -15,8 +16,8 @@ const Trap = () => {
       </View>
         <StatusBar style="auto" />
         <ListaArtistas />
-        <Playlist />
       </View>
+      </>
           )
 }
 

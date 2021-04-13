@@ -28,6 +28,7 @@ const Top5 = () => {
   }, []);
 
   return(
+    <>
     <View style={styles.container}>
       <View style={styles.tiutloTop}>
         <Text style={styles.textoTop}>El Top 5 en Islas Canarias</Text>
@@ -49,12 +50,18 @@ const Top5 = () => {
           </ScrollView>
         </SafeAreaView>
         </View>
+        <View style={styles.playlist}>
+        <View>
+          <Text style={styles.titulolist}>Playlist de el verdadero AnuelAA</Text>
+        </View>
+        </View>
+        </>
           )
 }
 
 const styles = StyleSheet.create({
     container: {
-      flex: 1,
+      flex: 2,
       backgroundColor: '#FFD321',
     },
     tiutloTop: {
@@ -77,6 +84,24 @@ const styles = StyleSheet.create({
       fontSize: 20,
      fontWeight: 'bold'
     },
+    playlist: {
+      flex: 1,
+      // backgroundColor: "#FFD321",
+      backgroundColor: '#282c34'
+     
+    },
+    titulolist :{
+      width: "90%",
+      textAlign: "center",
+      color: "white",
+      backgroundColor: "#282c34",
+      fontSize: 18,
+      marginTop: 10,
+      padding: 5,
+      marginHorizontal: 20,
+      borderRadius: 10,
+
+    }
   });
   
 

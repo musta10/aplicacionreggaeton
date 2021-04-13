@@ -6,7 +6,7 @@ import trapjson from "../listaJson/artistasTrap.json"
 
 const ListaTrap = () => {
   return (
-    <SafeAreaView style={{ flex: 1 }}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: "#FFFFFF", flexDirection: "row"}}>
       <ScrollView>
       <View style={styles.container}>
         {trapjson.map((artista, key) => {
@@ -20,7 +20,6 @@ const ListaTrap = () => {
      
           )
         })}
-       
       </View>
       </ScrollView>
     </SafeAreaView>
@@ -31,7 +30,6 @@ const ListaTrap = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "white",
     // paddingHorizontal: 20
   },
   artistalist:{

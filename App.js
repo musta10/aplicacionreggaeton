@@ -8,6 +8,7 @@ import Reggaeton from "./Tabs/Reggaeton"
 import Top5 from "./Tabs/Top5"
 import Header from './Header'
 
+
 const Tab = createMaterialBottomTabNavigator();
 
 export default function App() {
@@ -60,9 +61,12 @@ export default function App() {
           <MaterialCommunityIcons name="fire" color={color} size={26} />
         ),
       }}
+      
     />
   </Tab.Navigator>
+  
   </NavigationContainer>
+ 
   </>
   );
 }
