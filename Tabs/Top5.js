@@ -3,6 +3,8 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View ,Alert, SafeAreaView, ScrollView, } from 'react-native';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import YoutubePlayer from "react-native-youtube-iframe";
+import Pruebatest from "../ListaComponentes/Prueba";
+
 
 
 
@@ -51,9 +53,9 @@ const Top5 = () => {
         </SafeAreaView>
         </View>
         <View style={styles.playlist}>
-        <View>
+    
           <Text style={styles.titulolist}>Playlist de el verdadero AnuelAA</Text>
-        </View>
+        <Pruebatest />
         </View>
         </>
           )
@@ -87,7 +89,7 @@ const styles = StyleSheet.create({
     playlist: {
       flex: 1,
       // backgroundColor: "#FFD321",
-      backgroundColor: '#282c34'
+      backgroundColor: '#FFD321'
      
     },
     titulolist :{
@@ -100,7 +102,6 @@ const styles = StyleSheet.create({
       padding: 5,
       marginHorizontal: 20,
       borderRadius: 10,
-
     }
   });
   

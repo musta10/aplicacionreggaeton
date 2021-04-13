@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { SafeAreaView, View, StyleSheet, Text, Linking,TouchableOpacity } from "react-native";
+import { SafeAreaView, View, StyleSheet, Text, Linking, TouchableOpacity } from "react-native";
 import { ScrollView } from "react-native-gesture-handler";
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import trapjson from "../listaJson/artistasTrap.json"
@@ -11,11 +11,13 @@ const ListaTrap = () => {
       <View style={styles.container}>
         {trapjson.map((artista, key) => {
           return (
-            <TouchableOpacity key={key}  style={styles.artistalist} onPress={() =>{
+            <TouchableOpacity key={key} onPress={() =>{
               Linking.openURL(artista.url);
              }}>
+               <View style={styles.artistalist}>
               <MaterialCommunityIcons name="crown" color={"black"} size={30} />
               <Text style={styles.hyperlinkStyle}> {artista.name} </Text>
+              </View>
              </TouchableOpacity>
      
           )
