@@ -53,11 +53,9 @@ const Top5 = () => {
         </View>
         <View style={styles.playlist}>
           <Text style={styles.titulolist}>Playlist de el verdadero AnuelAA</Text>
-          <SafeAreaView style={styles.positiondiv}>
-            <ScrollView>
+          <View style={styles.positiondiv}>
             <Prueba />
-            </ScrollView>
-          </SafeAreaView>
+          </View>
         </View>
         </>
           )
@@ -95,15 +93,14 @@ const styles = StyleSheet.create({
      
     },
     positiondiv:{
-      marginTop: 10,
+      marginTop: 5,
       paddingHorizontal: 20,
-
     },
     titulolist :{
       width: "90%",
       textAlign: "center",
       color: "white",
-      backgroundColor: "#282c34",
+      backgroundColor: "#000000",
       fontSize: 18,
       marginTop: 10,
       padding: 5,

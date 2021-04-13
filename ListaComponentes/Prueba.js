@@ -1,11 +1,13 @@
 import React from "react"
 import { StyleSheet, Text, View, StatusBar, TouchableOpacity, Linking} from "react-native";
+import { ScrollView } from "react-native-gesture-handler";
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import playlist from "../listaJson/playlist.json"
 
 const Prueba = () => {
     return(
         <View>
+            <ScrollView horizontal={true}>
         {playlist.map((anuel, i) =>{
             return(
                 <TouchableOpacity key={i} style={styles.mydiv} onPress={() =>{
@@ -16,7 +18,7 @@ const Prueba = () => {
            </TouchableOpacity>
             )
         })}
-       
+       </ScrollView>
         </View>
     )
 }
@@ -25,7 +27,7 @@ const styles = StyleSheet.create({
     mydiv: {
         width: 120,
         height: 120,
-        backgroundColor: "#282c34",
+        backgroundColor: "#000000",
         justifyContent: "center",
         alignItems: "center",
         margin: 10,

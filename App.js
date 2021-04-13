@@ -7,9 +7,10 @@ import Lanueva from "./Tabs/Lanueva"
 import Reggaeton from "./Tabs/Reggaeton"
 import Top5 from "./Tabs/Top5"
 import Header from './Header'
-import Prueba from "./ListaComponentes/Prueba"
+
 
 const Tab = createMaterialBottomTabNavigator();
+// color: navbar '#282c34'
 
 export default function App() {
   return (
@@ -20,7 +21,7 @@ export default function App() {
     initialRouteName="Trap"
     activeColor="white"
     inactiveColor="#FFD321"
-    barStyle={{ backgroundColor: '#282c34' }}
+    barStyle={{ backgroundColor: '#000000' }}
   >
     <Tab.Screen
       name="Trap"
@@ -61,21 +62,9 @@ export default function App() {
           <MaterialCommunityIcons name="fire" color={color} size={26} />
         ),
       }}
-      
-    />
-            <Tab.Screen
-      name="test"
-      component={Prueba}
-      options={{
-        tabBarLabel: 'test',
-        tabBarIcon: ({ color }) => (
-          <MaterialCommunityIcons name="fire" color={color} size={26} />
-        ),
-      }}
-      
+  
     />
   </Tab.Navigator>
-  
   </NavigationContainer>
  
   </>
