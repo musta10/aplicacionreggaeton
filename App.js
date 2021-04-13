@@ -7,7 +7,7 @@ import Lanueva from "./Tabs/Lanueva"
 import Reggaeton from "./Tabs/Reggaeton"
 import Top5 from "./Tabs/Top5"
 import Header from './Header'
-
+import Prueba from "./ListaComponentes/Prueba"
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -57,6 +57,17 @@ export default function App() {
       component={Top5}
       options={{
         tabBarLabel: 'top5',
+        tabBarIcon: ({ color }) => (
+          <MaterialCommunityIcons name="fire" color={color} size={26} />
+        ),
+      }}
+      
+    />
+            <Tab.Screen
+      name="test"
+      component={Prueba}
+      options={{
+        tabBarLabel: 'test',
         tabBarIcon: ({ color }) => (
           <MaterialCommunityIcons name="fire" color={color} size={26} />
         ),
