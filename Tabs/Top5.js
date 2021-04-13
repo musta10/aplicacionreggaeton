@@ -58,8 +58,6 @@ const Top5 = () => {
             <Prueba />
             </ScrollView>
           </SafeAreaView>
-         
-        
         </View>
         </>
           )
@@ -98,7 +96,7 @@ const styles = StyleSheet.create({
     },
     positiondiv:{
       marginTop: 10,
-      paddingHorizontal: 20
+      paddingHorizontal: 20,
 
     },
     titulolist :{
