@@ -3,6 +3,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View ,Alert, SafeAreaView, ScrollView, } from 'react-native';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import YoutubePlayer from "react-native-youtube-iframe";
+import Playlist from "../ListaComponentes/Playlist"
 
 
 
@@ -28,6 +29,7 @@ const Top5 = () => {
   }, []);
 
   return(
+    <>
     <View style={styles.container}>
       <View style={styles.tiutloTop}>
         <Text style={styles.textoTop}>El Top 5 en Islas Canarias</Text>
@@ -49,12 +51,19 @@ const Top5 = () => {
           </ScrollView>
         </SafeAreaView>
         </View>
+        <View style={styles.playlist}>
+          <Text style={styles.titulolist}>Playlist de el verdadero AnuelAA</Text>
+          <View style={styles.positiondiv}>
+            <Playlist />
+          </View>
+        </View>
+        </>
           )
 }
 
 const styles = StyleSheet.create({
     container: {
-      flex: 1,
+      flex: 2,
       backgroundColor: '#FFD321',
     },
     tiutloTop: {
@@ -67,16 +76,36 @@ const styles = StyleSheet.create({
     areaview: {
       flex: 1,
       paddingTop: StatusBar.currentHeight,
-
     },
     scrol: {
       backgroundColor: '#FFD321',
       marginHorizontal: 20,
     },
     textoTop: {
-      fontSize: 20,
+      fontSize: 18,
      fontWeight: 'bold'
     },
+    playlist: {
+      flex: 1,
+      // backgroundColor: "#FFD321",
+      backgroundColor: '#FFD321'
+     
+    },
+    positiondiv:{
+      marginTop: 5,
+      paddingHorizontal: 20,
+    },
+    titulolist :{
+      width: "90%",
+      textAlign: "center",
+      color: "white",
+      backgroundColor: "#000000",
+      fontSize: 18,
+      marginTop: 10,
+      padding: 5,
+      marginHorizontal: 20,
+      borderRadius: 10,
+    }
   });
   
 
