@@ -3,7 +3,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View ,Alert, SafeAreaView, ScrollView, } from 'react-native';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import YoutubePlayer from "react-native-youtube-iframe";
-import Prueba from "../ListaComponentes/Prueba"
+import Playlist from "../ListaComponentes/Playlist"
 
 
 
@@ -54,7 +54,7 @@ const Top5 = () => {
         <View style={styles.playlist}>
           <Text style={styles.titulolist}>Playlist de el verdadero AnuelAA</Text>
           <View style={styles.positiondiv}>
-            <Prueba />
+            <Playlist />
           </View>
         </View>
         </>
@@ -76,7 +76,6 @@ const styles = StyleSheet.create({
     areaview: {
       flex: 1,
       paddingTop: StatusBar.currentHeight,
-
     },
     scrol: {
       backgroundColor: '#FFD321',
