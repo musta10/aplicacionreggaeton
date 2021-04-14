@@ -82,7 +82,7 @@ const styles = StyleSheet.create({
       marginHorizontal: 20,
     },
     textoTop: {
-      fontSize: 18,
+      fontSize: 16,
      fontWeight: 'bold'
     },
     playlist: {
@@ -100,7 +100,7 @@ const styles = StyleSheet.create({
       textAlign: "center",
       color: "white",
       backgroundColor: "#000000",
-      fontSize: 18,
+      fontSize: 16,
       marginTop: 10,
       padding: 5,
       marginHorizontal: 20,
