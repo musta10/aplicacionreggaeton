@@ -7,13 +7,13 @@ import playlista from "../listaJson/playlist.json"
 const Playlist = () => {
     return(
         <View>
-            <ScrollView horizontal={true}>
+            <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
         {playlista.map((anuel, i) =>{
             return(
                 <TouchableOpacity key={i} style={styles.mydiv} onPress={() =>{
                     Linking.openURL(anuel.url);
                 }}>
-                <MaterialCommunityIcons name="music-circle-outline" color={"white"} size={80} />
+                <MaterialCommunityIcons name="music-circle-outline" color={"white"} size={50} />
                 <Text style={{color: "#FFFFFF"}}>{anuel.name}</Text>
            </TouchableOpacity>
             )
@@ -25,8 +25,8 @@ const Playlist = () => {
 
 const styles = StyleSheet.create({
     mydiv: {
-        width: 120,
-        height: 120,
+        width: 110,
+        height: 110,
         backgroundColor: "#000000",
         justifyContent: "center",
         alignItems: "center",
