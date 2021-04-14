@@ -2,19 +2,19 @@ import React from "react"
 import { StyleSheet, Text, View, StatusBar, TouchableOpacity, Linking} from "react-native";
 import { ScrollView } from "react-native-gesture-handler";
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import playlista from "../listaJson/playlist.json"
+import listaomega from "../listaJson/omega.json"
 
-const Playlist = () => {
+const OmegaList = () => {
     return(
         <View>
             <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
-        {playlista.map((anuel, i) =>{
+        {listaomega.map((omega, i) =>{
             return(
                 <TouchableOpacity key={i} style={styles.mydiv} onPress={() =>{
-                    Linking.openURL(anuel.url);
+                    Linking.openURL(omega.url);
                 }}>
                 <MaterialCommunityIcons name="music-circle-outline" color={"black"} size={60} />
-                <Text style={{color: "#000000"}}>{anuel.name}</Text>
+                <Text style={{color: "#000000"}}>{omega.name}</Text>
            </TouchableOpacity>
             )
         })}
@@ -35,4 +35,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default Playlist;
+export default OmegaList;

@@ -4,6 +4,8 @@ import { StyleSheet, Text, View ,Alert, SafeAreaView, ScrollView, } from 'react-
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import YoutubePlayer from "react-native-youtube-iframe";
 import Playlist from "../ListaComponentes/Playlist"
+import OmegaList from "../ListaComponentes/Playomega";
+import Perreolista from "../ListaComponentes/Playperreo";
 
 
 
@@ -51,12 +53,34 @@ const Top5 = () => {
           </ScrollView>
         </SafeAreaView>
         </View>
+        <SafeAreaView style={{flex: 1, backgroundColor:"#FFD321"}} >
+          <ScrollView showsVerticalScrollIndicator={false}>
+        <View>
+        <Text style={styles.titulolist}>Playlist de el verdadero AnuelAA</Text>
+        </View>
         <View style={styles.playlist}>
-          <Text style={styles.titulolist}>Playlist de el verdadero AnuelAA</Text>
           <View style={styles.positiondiv}>
             <Playlist />
           </View>
         </View>
+        <View>
+        <Text style={styles.titulolist}>Playlist de Omega</Text>
+        </View>
+        <View style={styles.playlist}>
+          <View style={styles.positiondiv}>
+            <OmegaList />
+          </View>
+        </View>
+        <View>
+        <Text style={styles.titulolist}>Playlist de la Vieja Escuela</Text>
+        </View>
+        <View style={styles.playlist}>
+          <View style={styles.positiondiv}>
+            <Perreolista />
+          </View>
+        </View>
+        </ScrollView>
+        </SafeAreaView>
         </>
           )
 }
@@ -88,7 +112,7 @@ const styles = StyleSheet.create({
     playlist: {
       flex: 1,
       // backgroundColor: "#FFD321",
-      backgroundColor: '#FFD321'
+      backgroundColor: '#FFD321',
      
     },
     positiondiv:{
