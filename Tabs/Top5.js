@@ -72,7 +72,7 @@ const Top5 = () => {
           </View>
         </View>
         <View>
-        <Text style={styles.titulolist}>Playlist de la Vieja Escuela</Text>
+        <Text style={styles.titulolist}>Playlist de los clasicos</Text>
         </View>
         <View style={styles.playlist}>
           <View style={styles.positiondiv}>
