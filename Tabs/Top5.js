@@ -17,10 +17,9 @@ const Top5 = () => {
   const videos = [
     {topMusic: "37tmRDUK0FM"},
     {topMusic: "Fklvhaj7drg"},
-    {topMusic: "z1bYLIJ1hbI"},
+    {topMusic: "Tpv5ibeHdcE"},
     {topMusic: "GZCIchMq8Wo"},
-    {topMusic: "M-N8zr7_UWM"}
-  
+    {topMusic: "n52a2hpZJBo"}
   ]
 
   const onStateChange = useCallback((state) => {
@@ -56,19 +55,19 @@ const Top5 = () => {
         <SafeAreaView style={{flex: 1, backgroundColor:"#FFD321"}} >
           <ScrollView showsVerticalScrollIndicator={false}>
         <View>
-        <Text style={styles.titulolist}>Playlist de el verdadero AnuelAA</Text>
-        </View>
-        <View style={styles.playlist}>
-          <View style={styles.positiondiv}>
-            <Playlist />
-          </View>
-        </View>
-        <View>
         <Text style={styles.titulolist}>Playlist de Omega</Text>
         </View>
         <View style={styles.playlist}>
           <View style={styles.positiondiv}>
             <OmegaList />
+          </View>
+        </View>
+        <View>
+        <Text style={styles.titulolist}>Playlist de el verdadero AnuelAA</Text>
+        </View>
+        <View style={styles.playlist}>
+          <View style={styles.positiondiv}>
+           <Playlist />  
           </View>
         </View>
         <View>

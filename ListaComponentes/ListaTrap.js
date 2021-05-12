@@ -20,7 +20,7 @@ const ListaTrap = () => {
              }}background={TouchableNativeFeedback.Ripple(rippleColor, rippleOverflow)}
              >
                <View style={styles.artistalist}>
-              <MaterialCommunityIcons name="crown" color={"black"} size={30} />
+              <MaterialCommunityIcons name="crown" color={"#FFD321"} size={30} />
               <Text style={styles.hyperlinkStyle}> {artista.name} </Text>
               </View>
              </TouchableNativeFeedback>
@@ -47,14 +47,14 @@ const styles = StyleSheet.create({
   artistalist:{
     // borderWidth: 2,
     // borderColor: "#FFD321",
-    borderBottomWidth: 0.5,
-    borderBottomColor: "#ccc",
+    borderWidth: 1,
+    borderColor: "#000000",
     alignItems: "center",
-    height: 70,
-    margin: 5,
+    height: 60,
+    margin: 10,
     flexDirection: "row",
     justifyContent: "center",
-    borderRadius: 35
+    borderRadius: 5
   },
   hyperlinkStyle: {
     color: "black",

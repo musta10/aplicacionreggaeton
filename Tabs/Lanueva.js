@@ -1,13 +1,13 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, TextInput} from 'react-native';
 import Lanueva from "../ListaComponentes/ListaNueva"
 
 class Profile extends React.Component {
     render(){
         return(
   <View style={styles.container}>
-      <Text style={styles.subtitulo}>27 artistas la nueva generación</Text>
+ <Text style={styles.subtitulo}>Artistas de la Nueva Generacion</Text>
       <StatusBar style="auto" />
       <Lanueva />
     </View>
@@ -24,7 +24,14 @@ const styles = StyleSheet.create({
       margin: 20,
       color: "#796e6e",
       
-    }
+    },
+     busqueda:{
+     height: 40,
+     margin: 20,
+     borderWidth: 1,
+     borderRadius: 10,
+     padding: 10,
+    },
   });
   
 
